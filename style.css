@@ -66,16 +66,27 @@ header {
 }
 
 .pacotes {
-    height: 500px;
     background: radial-gradient(circle at 56.95% 30.9%, #ffffde 0, #ffface 16.67%, #ffe5b8 33.33%, #ffcb9d 50%, #f0b084 66.67%, #e69c73 83.33%, #e08d6b 100%);
+    padding: 15px;
 }
+
 .pacotes .card {
     width: 250px;
     height: 350px;
     background: orange;
     border-radius: 24px 0px;
-    margin: 100px auto;
+    margin: 25px auto;
     position: relative;
+}
+
+.pacotes .pacotes-cards {
+    display: flex;
+}
+
+.pacotes .pacote-title {
+    width: 100%;
+    text-align: center;
+    margin: auto;
 }
 
 .pacotes .card-image {
