@@ -9,6 +9,21 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+button {
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
 ul {
     list-style: none;
     display: flex;
@@ -23,18 +38,19 @@ nav {
     display: flex;
     justify-content: space-between;
     margin: auto 30px;
-    color: white;
+    color: black;
     font-weight: bold;
 }
 
 nav p {
     font-weight: bold;
-    color: white;
+    color: black;
 }
 
 header {
     height: calc(100vh - 150px);
     background: no-repeat center/cover url('assets/header_img.jpg');
+    opacity: 0.8;
 }
 
 .header-content {
