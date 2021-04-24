@@ -69,6 +69,13 @@ header {
     height: 500px;
 }
 
+.pacotes .card {
+    width: 250px;
+    height: 350px;
+    background: orange;
+    border-radius: 24px 0px;
+}
+
 @media (max-width: 767px) {
 
 }
