@@ -41,6 +41,10 @@ header {
     max-width: 400px;
     margin: 150px auto;
     color: white;
+    text-align: center;
 }
 
+.header-content h1 {
+    margin-bottom: 10px;
+}
 
