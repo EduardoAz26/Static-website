@@ -15,20 +15,20 @@
         <nav>
             <p>Azevedo Viagens</p>
                <ul>
-                   <li>Home</li>
-                   <li>Pacotes</li>
-                   <li>Serviços</li>
-                   <li>Quem Somos</li>
+                   <li><a href="#home">Home</a></li>
+                   <li><a href="#pacotes">Pacotes</a></li>
+                   <li><a href="#servicos">Serviços</a></li>
+                   <li><a href="#contato">Contato</a></li>
                </ul>
         </nav>
-        <div class="header-content">
+        <div id="home" class="header-content">
             <h1>Rio de Janeiro</h1>
             <p>Venha para o Rio de Janeiro! Agende já sua próxima viagem para o paraíso!</p>
             <button>Saiba mais</button>
         </div>
     </header>
 
-    <section class="pacotes">
+    <section id="pacotes" class="pacotes">
 
         <h1 class="pacote-title">Vem conhecer nossos pacotes!</h1>
 
@@ -95,7 +95,7 @@
     </div>    
     </section>
 
-    <section class="servicos">
+    <section id="servicos" class="servicos">
         <h1 class="servicos-title">Serviços</h1>
         <div class="servicos-cards">
             <div class="card">
@@ -121,7 +121,7 @@
         </div>
     </section>
 
-    <section class="contato">
+    <section id="contato" class="contato">
         <div class="contato-card">
             <h1>Entre em contato</h1>
                 <ul>
@@ -133,9 +133,20 @@
         <div id="map"></div>
     </section>
 
-<!--Script que chama os ícones que estão sendo usados na página.-->    
+    
 <script>
-    feather.replace();
+    feather.replace(); //Script que chama os ícones que estão sendo usados na página.
+
+    //Script que faz o rolamento das seções de maneira suave.
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+             anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+            });
+        });
+    });
 
     function initMap() {
         const uluru = { lat: -25.344, lng: 131.036 };
