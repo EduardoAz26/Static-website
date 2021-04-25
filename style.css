@@ -17,7 +17,7 @@ button {
     border-radius: 5px;
     border: none;
     cursor: pointer;
-    opacity: 0.5;
+    opacity: 0.9;
 }
 
 button:hover {
@@ -173,7 +173,7 @@ pacotes .card-content {
 
 .servicos .servicos-title {
     text-align: center;
-    margin: 25px 0;
+    margin: 35px 0;
 }
 
 .servicos .servicos-cards {
@@ -186,6 +186,16 @@ pacotes .card-content {
 .servicos .card svg {
     width: 60px;
     height: 60px;
+}
+
+.servicos .card h3 {
+    font-weight: bold;
+}
+
+.servicos .card p {
+    color: grey;
+    font-size: .8rem;
+    text-align: center;
 }
 
 @media (max-width: 767px) {
