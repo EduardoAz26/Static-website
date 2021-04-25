@@ -160,6 +160,22 @@ pacotes .card-content {
     font-weight: bold;
 }
 
+.servicos .card {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicos {
+    padding: 15px;
+}
+
+.servicos .card svg {
+    width: 60px;
+    height: 60px;
+}
+
 @media (max-width: 767px) {
 
 }
