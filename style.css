@@ -179,13 +179,20 @@ pacotes .card-content {
 .servicos .servicos-cards {
     display: flex;
     max-width: 950px;
-    justify-content: space-between;
+    justify-content: center;
     margin: auto;
+    flex-wrap: wrap;
 }
 
 .servicos .card svg {
     width: 60px;
     height: 60px;
+    transition: all 1s;
+}
+
+.servicos .card svg:hover {
+    stroke: red;
+    transform: scale(1.1);
 }
 
 .servicos .card h3 {
@@ -196,6 +203,16 @@ pacotes .card-content {
     color: grey;
     font-size: .8rem;
     text-align: center;
+}
+
+.servicos button {
+    background: blue;
+    color: white;
+    opacity: 0.7;
+}
+
+.servicos button:hover {
+    opacity: 0.8;
 }
 
 @media (max-width: 767px) {
@@ -232,3 +249,10 @@ pacotes .card-content {
         text-align: center;
     }
 }
+
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
