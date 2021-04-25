@@ -75,18 +75,22 @@ header {
     height: 350px;
     background: orange;
     border-radius: 24px 0px;
-    margin: 25px auto;
+    margin: 25px;
     position: relative;
 }
 
 .pacotes .pacotes-cards {
     display: flex;
+    margin: auto;
+    max-width: 950px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .pacotes .pacote-title {
     width: 100%;
     text-align: center;
-    margin: auto;
+    margin: 25px 0;
 }
 
 .pacotes .card-image {
@@ -162,7 +166,7 @@ pacotes .card-content {
 
 @media (max-width: 480px) {
     body {
-        height: calc(100vh - 55px);
+        margin-bottom: 55px;
     }
 
     header nav ul {
@@ -172,6 +176,8 @@ pacotes .card-content {
         width: 100%;
         padding: 0;
         margin: 0;
+
+        z-index: 99;
 
         background: green;
         color: white;
