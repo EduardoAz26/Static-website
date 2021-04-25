@@ -171,6 +171,18 @@ pacotes .card-content {
     padding: 15px;
 }
 
+.servicos .servicos-title {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.servicos .servicos-cards {
+    display: flex;
+    max-width: 950px;
+    justify-content: space-between;
+    margin: auto;
+}
+
 .servicos .card svg {
     width: 60px;
     height: 60px;
