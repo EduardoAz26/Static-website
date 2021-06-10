@@ -1,2 +1,2 @@
-# site_agencia
- Site de busca de viagens
+# Static website
+ Travel agency website.
